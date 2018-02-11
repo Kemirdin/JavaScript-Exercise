@@ -55,3 +55,23 @@
     //   dogData.innerText = `${dog.name} is a ${dog.type}`;
     //   dogsList.appendChild(dogData);
     //   i++;
+       // do {
+        //   // grab the dog
+        //   const dog         = dogs[i];
+        //   const dogData     = document.createElement('div');
+        //   dogData.classList.add('jumbotron', 'text-center');
+        //   dogData.innerText = `${dog.name} is a ${dog.type}`;
+        //   dogsList.appendChild(dogData);
+        //   i++;
+        // } while (i < dogs.length);
+        // for...of iterator
+        for (let dog of dogs) {
+            const dogData = document.createElement('div');
+            dogData.classList.add('jumbotron', 'text-center');
+            dogData.innerText = `${dog.name} is a ${dog.type}`;
+            dogsList.appendChild(dogData);
+        }
+  </script>
+</body>
+
+</html>
