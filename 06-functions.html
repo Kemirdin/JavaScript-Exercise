@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
     <div class="jumbotron text-center">
         <button type="button" class="btn btn-danger" onclick="saySomething('this is the first button')">
             My Button
@@ -22,25 +23,27 @@
             My 2nd Button
         </button>
     </div>
-    
+
     <!-- 🔥🔥🔥🔥 start javascript 🔥🔥🔥🔥 -->
     <script>
+
         function saySomething(message = 'goodbye', whisper = false) {
-                if (whisper) {
-                    console.log(`%c${message}`, 'font-size:5px');
-                } else {
-                    console.log(message);
-                }
+            if (whisper) {
+                console.log(`%c${message}`, 'font-size:5px');
+            } else {
+                console.log(message);
             }
-            saySomething('hello', true);
-            saySomething('my name is chris', true);
-            saySomething();
-    // function squared(a) {
-    //   return a * a;
-    // }
-    // const newSquared = squared(3);
-    // console.log(newSquared);
-    const squared = (a) => {
+        }
+        saySomething('hello', true);
+        saySomething('my name is chris', true);
+        saySomething();
+        // function squared(a) {
+        //   return a * a;
+        // }
+        // const newSquared = squared(3);
+        // console.log(newSquared);
+
+        const squared = (a) => {
             return a * a;
         }
         const otherSquared = squared;
@@ -48,7 +51,7 @@
         function punch() {
             console.log('punch here!');
         }
-  </script>
+    </script>
 </body>
 
 </html>
