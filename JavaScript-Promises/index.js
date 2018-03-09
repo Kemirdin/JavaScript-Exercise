@@ -17,3 +17,15 @@ const willIGetNewPhone = new Promise(
         }
     }
 );
+
+//2nd promise
+async function showoff(phone) {
+    return new Promise(
+        (resolve, reject) => {
+            let message = 'Hey friend I have a new' + phone.color + '' + phone.brand + ' phone';
+
+            resolve(message);
+        }
+    );
+    
+};
