@@ -29,3 +29,22 @@ async function showoff(phone) {
     );
     
 };
+
+// call our promise
+async function askMom() {
+    try {
+        console.log('before asking Mom');
+
+        let phone = await willIGetNewPhone;
+        let message = await showOff(phone);
+
+        console.log(message);
+        console.log('after asking mom');
+    } catch (error) {
+        console.log(error.message);
+    }
+}
+
+(async () => {
+    await askMom();
+})();
