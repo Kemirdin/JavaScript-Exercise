@@ -18,9 +18,17 @@ window.onload = function () {
   }
   var Promise = get ('data/tweets.json');
   Promise.then (function (tweets) {
-      console.log(tweets);
-    return.get(data/)  
-  }).catch (function (error) {
-    console.log (error);
-  });
+    console.log (tweets);
+    return get ('data/friends.json');
+  })
+    .then (function (friends) {
+      console.log (friends);
+      return get ('data/videos.json');
+    })
+    .then (function (videos) {
+      console.log (videos);
+    })
+    .catch (function (error) {
+      console.log (error);
+    });
 };
