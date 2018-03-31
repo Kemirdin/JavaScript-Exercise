@@ -1,8 +1,7 @@
 window.onload = function () {
-  function callBack (val) {
-    console.log (val);
+  function callBack (data) {
+    console.log (data);
   }
-  var fruits = ['banana', 'apple', 'pear'];
-  fruits.forEach (callBack);
-  console.log ('done');
+  $.get ('data/tweets.json', callBack);
+  console.log ('test');
 };
