@@ -1,4 +1,5 @@
 var birthday = new Date (1983, 0, 15, 11, 15, 27);
+var birthday2 = new Date (1983, 0, 15, 11, 15, 27);
 
 //get the month of the date(0-11)
 console.log (birthday.getMonth ());
@@ -17,3 +18,9 @@ console.log (birthday.getHours ());
 
 //get the number of milliseconds since 1st Jan 1978
 console.log (birthday.getTime ());
+
+if (birthday.getTime () == birthday2.getTime ()) {
+  console.log ('birthdays are equal');
+} else {
+  console.log ('birthdays are not equal');
+}
