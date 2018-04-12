@@ -1,0 +1,1 @@
+document.write("hey I am studying JS!!!");
